@@ -21,7 +21,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Konfiguratsiya
-BOT_TOKEN = os.getenv('BOT_TOKEN', '8125750878:AAEeyftrcKyw7sNRq_tmTZL6Kj8QjODSNsw')
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '8125750878:AAEeyftrcKyw7sNRq_tmTZL6Kj8QjODSNsw')
 SUPPORTED_PLATFORMS = [
     'youtube.com', 'youtu.be', 'instagram.com', 'tiktok.com',
     'snapchat.com', 'twitter.com', 'x.com', 'facebook.com', 'vimeo.com'
